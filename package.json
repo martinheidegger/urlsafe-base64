@@ -1,0 +1,45 @@
+{
+  "name": "@tradle/urlsafe-base64",
+  "version": "1.0.0",
+  "description": "Compatible urlsafe base64 de-/encoder",
+  "types": "types/index.d.ts",
+  "main": "index.js",
+  "module": "index.mjs",
+  "scripts": {
+    "lint": "standard *.js && dtslint --localTs node_modules/typescript/lib types",
+    "test": "npm run lint && npm run unit",
+    "unit": "npm run unit:js && npm run unit:mjs && npm run unit:ts",
+    "unit:js": "node test.js",
+    "unit:mjs": "node test.mjs",
+    "unit:ts": "ts-node -O '{\"esModuleInterop\":false}' test.ts && ts-node -O '{\"esModuleInterop\":true}' test.ts"
+  },
+  "keywords": [
+    "base64",
+    "urlsafe",
+    "encoding",
+    "util",
+    "python",
+    "compatible",
+    "url"
+  ],
+  "author": "Martin Heidegger <martin.heidegger@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "dtslint": "^4.2.1",
+    "fresh-tape": "^5.4.1",
+    "standard": "^16.0.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tradle/urlsafe-base64.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tradle/urlsafe-base64/issues"
+  },
+  "homepage": "https://github.com/tradle/urlsafe-base64#readme"
+}
